@@ -1,0 +1,18 @@
+$dbname = 'name';
+$dbuser = 'user';
+$dbpass = 'pass';
+$dbhost = 'host';
+$connect = mysql_connect($dbhost, $dbuser, $dbpass) or die("Unable to Connect to '$dbhost'");
+mysql_select_db($unoclass) or die("Could not open the db '$unoclass'");
+$test_query = "SHOW TABLES FROM $unoclass";
+$result = mysql_query($test_query);
+$tblCnt = 0;
+while($tbl = mysql_fetch_array($result)) {
+  $tblCnt++;
+  #echo $tbl[0]."<br />\n";
+}
+if (!$tblCnt) {
+  echo "There are no tables<br />\n";
+} else {
+  echo "There are $tblCnt tables<br />\n";
+}

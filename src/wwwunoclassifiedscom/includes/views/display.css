@@ -1,0 +1,24 @@
+body {
+    background-color: #d0e4fe;
+}
+titl {
+    color: darkviolet;
+    font-family: Arial, "Times New Roman";
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 40px;
+}
+other {
+    color: darkviolet;
+    font-family: Arial, "Times New Roman";
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+descr {
+    color: black;
+    font-family: Arial, "Times New Roman";
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+}

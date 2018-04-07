@@ -1,0 +1,4 @@
+AddType application/x-httpd-php .htm
+AddType application/x-httpd-php .html 
+DirectoryIndex index.php
+ErrorDocument 404 /includes/views/404.php
